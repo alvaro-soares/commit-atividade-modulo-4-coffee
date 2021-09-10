@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Coffee</title>
+    <style>
+
+    body {
+       margin: 0 auto; 
+    }
+
+    /* Background incial */
+
+    header.background {
+        background-image: url(file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/black-coffee-background.png);
+        background-attachment: fixed;
+        background-size: cover;
+        width: 1600px;
+        height: 900px;
+        color: #fff;
+    }
+
+    p#black-coffee {
+        font-style: italic;
+        position: relative;
+        padding-top: 30px;
+        margin-left: 750px;
+    }   
+
+    h1#texto {
+        font-size: 80px;
+        display: block;
+        position: relative;
+        margin-top: 200px;
+        margin-left: 60px;
+        
+    }
+
+    p#texto-secundario {
+        font-size: 32px;
+        position: relative;
+        margin-left: 65px;
+        margin-top: 10px;
+    }
+
+    /*fim do background inicial */
+
+    /* Textos com imagem ao lado */
+
+    img.caindo {
+        position: relative;
+        margin-top: 100px;
+        margin-left: 80px;
+        display: block;
+        float: left;
+        width: 704px;
+        height: 560;
+    }
+
+    h2#mágico {
+        display: block;
+        float: right;
+        position: relative;
+        margin-top: 150px;
+        margin-right: 260px;
+        font-size: 56px;
+        line-height: 60px;
+        padding-top: 20px;
+    }
+
+    p#texto-1 {
+        display: block;
+        float: right;
+        clear: right;
+        margin-top: -30px;
+        margin-right: 150px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    h2#mais {
+        position: relative; 
+        display: block; 
+        float: left;
+        margin-top: -500px;
+        margin-left: 200px;
+        font-size: 56px;
+    }
+
+    p#texto-2 {
+        position: relative; 
+        display: block;
+        float: left;
+        margin-top: -420px;
+        margin-left: 200px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    img.xicara {
+        width: 704px;
+        height: 560px;
+        position: relative;
+        margin-top: 350px;
+        margin-left: 15px;
+    }
+
+    /* Fim dos textos com imagem */
+
+    /* Imagens dos tipos de café */ 
+
+    h2#variedades { 
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 56px;
+        color: #A0996C;
+        line-height: 60px;
+        padding-left: 60px;
+    }
+
+    div.ruanda {
+        position: relative;
+        margin-top: 70px;
+        margin-left: 70px;
+        background-color: #F7F1E6;
+        background-attachment: fixed;
+        width: 459px;
+        height: 560px;
+    }
+
+    p#nome-do-cafe {
+        padding-top: 50px;
+        padding-left: 90px;
+        font-size: 24px;
+    }
+
+    div.ruanda img {
+        padding-top: 25px;  
+        padding-left: 150px; 
+    }
+
+    p#valor {
+        padding-top: -10px;
+        padding-left: 160px;
+        font-size: 32px;
+        font-weight: 700px;
+    }
+
+    button#botao-de-compra {
+        width: 395px;
+        height: 76px;
+        margin-top: 7px;
+        margin-left: 32px;
+        background-color: #0B1D03;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    div.ruanda-2 {
+        background-color: #F7F1E6;
+        background-attachment: fixed;
+        width: 459px;
+        height: 560px;
+        margin-left: 70px;
+    }
+
+    p#nome-do-cafe-2 {
+        padding-top: 50px;
+        padding-left: 90px;
+        font-size: 24px;
+    }
+
+    div.ruanda-2 img {
+        padding-top: 25px;  
+        padding-left: 150px; 
+    }
+
+    p#valor-2 {
+        padding-top: -10px;
+        padding-left: 160px;
+        font-size: 32px;
+        font-weight: 700px;
+    }
+
+    button#botao-de-compra-2 {
+        width: 395px;
+        height: 76px;
+        margin-top: 7px;
+        margin-left: 32px;
+        background-color: #0B1D03;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /* Icones */
+
+    div#icone-caminhao { 
+        margin-top: 200px;
+        margin-left: 178px;
+    }
+
+    p#entrega {
+        font-weight: 500px;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 4%;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    div#icone-moedas {
+        margin-top: -135px;
+        margin-left: 448px;
+    }
+
+    div#icone-moedas img {
+        margin-top: -15px;
+    }
+
+    p#pagamento {
+        font-weight: 500px;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 4%;
+        margin-left: -5px;
+        margin-top: 33px;
+    }
+
+    div#icone-carteira {
+        margin-left: 676px;
+        margin-top: -120px;
+    }
+
+    div#icone-carteira img {
+        margin-top: -30px;
+        margin-left: 5px;
+    }
+
+    p#politica {
+        font-weight: 500px;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 4%; 
+        margin-left: -15px;
+        margin-top: 27px;
+    }
+
+    div#icone-etiqueta {
+        margin-left: 904px;    
+        margin-top: -140px;
+    }
+
+    div#icone-etiqueta img {
+        margin-left: 25px;
+    }
+
+    p#sistema {
+        font-weight: 500px;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 4%; 
+        margin-left: -20px;
+        margin-top: 25px;
+    }
+
+    div#icone-presente {
+        margin-left: 1132px;
+        margin-top: -140px;
+    }
+
+    div#icone-presente img { 
+        margin-left: 35px;
+    }
+
+    p#presente {
+        font-weight: 500px;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 4%; 
+    }
+
+    /* Fim dos icones */
+
+    /* Imagem dos grãos e bule  */
+
+    div#graos-e-bule {
+        margin-top: 144px;
+        margin-left: 80px;
+    }
+
+    img.graos {
+        padding-right: 10px;  
+        height: 560px;
+        width: 704px;
+    }
+
+    img.bule {
+        height: 560px;
+        width: 704px; 
+    }
+
+    p#catalogo-de-cafe {
+        weight: 700;
+        font-style: normal;
+        font-size: 56pt;
+        line-height: 60px;
+        color: #FFFCF6;
+        margin-top: -170px;
+        margin-left: 115px;
+    }
+
+    p#mais-de-50 {
+        weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 4%;
+        margin-top: -50px;
+        margin-left: 115px;
+        color: #FFFCF6;
+
+    }
+
+    p#acessorios {
+        weight: 700;
+        font-style: normal;
+        font-size: 56pt;
+        line-height: 60px;
+        color: #FFFCF6;
+        margin-top: -160px;
+        margin-left: 840px;
+    }
+
+    p#todo {
+        weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 4%;
+        color: #FFFCF6;
+        margin-top: -50px;;
+        margin-left: 840px;
+    }
+
+    /* fim das imagens do grão e bule */
+
+    /* Sessão do mapa */ 
+
+    h2#encontre-loja {
+        margin-top: 200px;
+        margin-left: 80px;
+        font-size: 56px;
+        line-height: 60px;
+        font-weight: 700;
+        text-transform: initial;
+        color: #0B1D03;
+    }
+
+    div.dados {
+        margin-top: 48px;
+    }
+
+    input#cidade {
+        width: 459px;
+        height: 76px;
+        font-size: 20px;
+        color: #969696;
+        margin-left: 80px;
+        padding-left: 28px;
+    }
+
+    input#endereco {
+        width: 949px;
+        height: 76px;
+        font-size: 20px;
+        color: #969696;
+        margin-left: 600px;
+        background: url(file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/busca.png);
+        background-repeat: no-repeat;
+        background-position: 920px 32px;
+        background-size: 18px;
+        padding-left: 28px;
+    }
+
+    input#endereco::before {
+        content
+    }
+
+    img.mapa {
+        margin: 24px 80px 40px 80px;
+    }
+
+    /* fim da sessão do mapa */
+
+    /* rodape */ 
+
+    footer.rodape {
+        margin-top: 40px;
+        background-color: #F7F1E6;
+    }
+
+    p#cafe-preto {
+        padding: 56px 1369px 222px 80px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    table#institucional {
+        position: absolute;
+        margin-left: 368px;   
+        margin-top: -285px;
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    tr#institucional { 
+        text-transform: uppercase;
+    }
+
+    table#produtos {
+        position: absolute; 
+        margin-left: 776px;
+        margin-top: -285px;
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    tr#produtos {
+        text-transform: uppercase;
+    }
+
+    p#redes-sociais {
+        position: absolute;
+        margin-left: 1184px;
+        margin-top: -275px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    img.circulo-1 {
+        position: absolute;
+        margin-left: 1190px; 
+        margin-top: -245px;
+    }
+
+    img.retangulo {
+        position: absolute; 
+        margin-left: 1197px; 
+        margin-top: -239px;
+    }
+
+    
+
+    img.circulo-2 {
+        position: absolute;
+        margin-left: 1235px; 
+        margin-top: -245px;
+    }
+
+    
+    img.twitter {
+        position: absolute;
+        margin-left: 1242px; 
+        margin-top: -237px;
+    }
+
+    img.circulo-3 {
+        position: absolute; 
+        margin-left: 1280px; 
+        margin-top: -245px;
+    }
+
+    img.facebook {
+        position: absolute; 
+        margin-left: 1292px; 
+        margin-top: -238px;
+    }
+   
+    /* fim do rodapé */
+   
+    </style>
+</head>
+<body>
+    <header class="background">
+        <p id="black-coffee">BlackCoffee</p>
+        <h1 id="texto">Preparamos o <br> melhor café fresco <br> da torra todo dia</h1>  
+        <p id="texto-secundario">Entregamos em todo Brasil</p> 
+    </header>
+    <section class="texto">
+        <div>
+            <img class="caindo" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/despejando-cafe.png" alt="café caindo">
+        </div>
+                <h2 id="mágico">Café mágico...</h2>
+                <p id="texto-1">Preparado com os melhores<br>ingredientes e com os melhores<br>acessórios, seguindo os métodos<br>tradicionais e os mais modernos.</p>
+        <div>
+            <img class="xicara" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/xicara.png" alt="xicará com café">
+        </div>
+                <h2 id="mais">...e muito mais</h2>
+                <p id="texto-2">Não esqueça de dar uma olhada em<br>nossa selação de sobremesas<br>deliciosas!</p>
+    </section>
+
+    <section class="variedades">
+        <h2 id="variedades">Variedades de café</h2> <!--Procurar a tipo de fonte-->
+            <div class="ruanda">
+                <p id="nome-do-cafe">RUANDA UMARAGE NAT</p>
+                <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/saco-cafe.png" alt="saco de café">
+                <p id="valor">40 R$ &nbsp<span style="color: grey; font-size: 24px">60 R$</span></p>
+                <button id=botao-de-compra>+ adicionar ao carrinho</button>
+            </div>
+            <div class="ruanda-2">
+                <p id="nome-do-cafe-2">RUANDA UMARAGE NAT</p>
+                <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/saco-cafe.png" alt="saco de café">
+                <p id="valor-2">40 R$ &nbsp<span style="color: grey; font-size: 24px">60 R$</span></p>
+                <button id=botao-de-compra-2>+ adicionar ao carrinho</button>
+            </div>
+
+            <!--Fazer depois o restante das divs com imagem - faltam mais 4 - div 1 à 6-->
+    </section>
+
+    <section> 
+        <div id="icone-caminhao">
+            <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/icone-1.png">
+            <p id="entrega">Entrega <br> gratuita</p> 
+        </div>
+        <div id="icone-moedas">
+            <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/icone-2.png">
+            <p id="pagamento">Pagamento<br>na entrega</p>
+        </div>
+        <div id="icone-carteira">
+            <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/icone-3.png">
+            <p id="politica"> &nbsp &nbsp Política<br>de reembolso</p>
+        </div>
+        <div id="icone-etiqueta">
+            <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/icone-4.png">
+            <p id="sistema">Sistema de descontos<br> &nbsp &nbsp &nbsp acumulaveis</p>
+        </div>
+        <div id="icone-presente">
+            <img src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/icone-5.png">
+            <p id="presente">presente por cada<br> &nbsp 6 caixas de café</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="graos-e-bule">
+            <img class="graos" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/gr%C3%A3os.png">
+            <img class="bule" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/bule.png">
+        </div>
+                <p id="catalogo-de-cafe">Catálogos de cafés</p>
+                <p id="mais-de-50">Mais de 50 tipos de café fresco da torra para<br>qualquer método de preparo</p>
+                <p id="acessorios">Acessórios</p>
+                <p id="todo">Todo o que a gente precisa para preparar<br>um café saboroso em casa</p>
+    </section>
+
+    <section>
+        <h2 id="encontre-loja">Encontre uma loja</h2>
+        <div class="dados"> 
+            <form action="URL"> 
+                <input id="cidade" type="text" placeholder="Escolha uma cidade" list="cidades"> 
+                    <datalist id="cidades"> 
+                        <option value="X"></option>
+                        <option value="Y"></option>
+                        <option value="Z"></option>
+                    </datalist>
+                        <div>
+                            <input id="endereco" type="text" placeholder="Digite um endereço">
+                        </div>
+            </form>  
+        </div>
+        <div>
+            <img class="mapa" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/mapa.png">
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p id="cafe-preto">BlackCoffee</p>
+        <table id="institucional">
+            <th>
+                <tr id="institucional"><td>institucional</tr></td>
+                <tr><td>Quem somos</td></tr>
+                <tr><td>Certificados</td></tr>
+                <tr><td>Nossa produção</td></tr>
+                <tr><td>Programa de parceiros</td></tr>
+            </th>
+        </table>
+
+        <table id="produtos"> 
+            <th>
+                <tr id="produtos"><td>Produtos</td></tr>
+                <tr><td>Café</td></tr>
+                <tr><td>Té</td></tr>
+                <tr><td>Acessórios</td></tr>
+                <tr><td>Ofertas</td></tr>
+            </th>
+        </table>
+
+        <p id="redes-sociais">Redes sociais</p>
+
+        <section>
+            <div>
+                <a href="">
+                <img class="circulo-1" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/Circle.png">
+                <img class="retangulo" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/retangulo.png">
+                </a>
+            </div>
+
+            <div>
+                <a href="">
+                <img class="circulo-2" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/Circle.png">
+                <img class="twitter" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/twitter.png">
+                </a>
+            </div>
+
+            <div>
+                <a href="">
+                <img class="circulo-3" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/Circle.png">
+                <img class="facebook" src="file:///C:/Users/alvar/Desktop/TI/Git/Repositorio/modulo%204%20-%20atividades/coffee/imagens/facebook.png">
+                </a>
+            </div>
+        </section>  
+        
+    </footer>
+    
+</body>
+</body>
+</html>
